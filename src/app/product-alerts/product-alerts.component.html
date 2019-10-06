@@ -1,0 +1,4 @@
+<p *ngIf="product.price > 700">
+  <button (click)="notify.emit()" *ngIf="showRed" style="color:red">Notify Me</button>
+  <button (click)="notify.emit()" *ngIf="!showRed">Notify Me</button>
+</p>
